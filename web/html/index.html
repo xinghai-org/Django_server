@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>aaa</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div class="root">
+        <!-- 头部，那个搜索栏 -->
+        <div class="header">
+            <div class="headerSearch">
+                <div class="searchLeft"><img src="{% static 'images\search_img_top.svg' %}" /></div>
+                <input type='text' class="search"></buttom>
+                <div class="searchRight">搜索</div>
+            </div>
+        </div>
+
+        <!-- 导航栏，焦点图 -->
+        <div class="nav">
+            <div class="tab">
+                <ul>
+                    <li>购物</li>|
+                    <li>圈子</li>|
+                    <li>168严选</li>|
+                    <li>聚划算</li>|
+                    <li>超市</li>
+                </ul>
+            </div>
+            <div class="nav_class">
+                <ul>
+                    <li><img src="{% static 'images\pc.svg' %}" /><span><a href="#">电脑</a>/<a href="#">办公</a>/<a
+                                href="#">文具</a></span>
+                    </li>
+                    <li><img src="{% static 'images\cricle.svg' %}" /><span><a href="#">工业品</a>/<a href="#">商品</a>/<a
+                                href="#">定制</a></span></li>
+                    <li><img src="{% static 'images\shouji.svg' %}" /><span><a href="#">家电</a>/<a href="#">手机</a>/<a
+                                href="#">数码</a></span></li>
+                    <li><img src="{% static 'images\sofa.svg' %}" /><span><a href="#">家具</a>/<a href="#">家装</a>/<a
+                                href="#">家具</a></span></li>
+                    <li><img src="{% static 'images\t-shift.svg' %}" /><span><a href="#">女装</a>/<a href="#">男装</a>/<a
+                                href="#">内衣</a></span></li>
+                    <li><img src="{% static 'images\shioes.svg' %}" /><span><a href="#">女鞋</a>/<a href="#">男鞋</a>/<a
+                                href="#">运动</a></span></li>
+                    <li><img src="{% static 'images\car.svg' %}" /><span><a href="#">汽车</a>/<a href="#">珠宝</a>/<a
+                                href="#">箱包</a></span></li>
+                    <li><img src="{% static 'images\books.svg' %}" /><span><a href="#">娱乐</a>/<a href="#">图书</a>/<a
+                                href="#">鲜花</a></span></li>
+                </ul>
+            </div>
+
+            <div class="nav_center">
+                <img src="{% static 'images\title_content1.png' %}" />
+            </div>
+
+            <div class="nav_userInfo">
+                <div class="userInfo_top"><img src="{% static 'images\touxiang.svg' %}" alt=""><span>请登入...</span></div>
+                <ul class="user_a">
+                    <li>
+                        <p>{{ shoppingCar }}</p>
+                        <span>购物车</span>
+                    </li>
+                    <li>
+                        <p>0</p><span>待收货</span>
+                    </li>
+                    <li>
+                        <p>0</p>
+                        <span>代发货</span>
+                    </li>
+                    <li>
+                        <p>0</p>
+                        <span>待付款</span>
+                    </li>
+                </ul>
+                <ul class="user_b">
+                    <li><img src="{% static 'images/star.svg' %}" /><span>收藏</span></li>
+                    <li><img src="{% static 'images\store.svg' %}" /><span>收藏的店铺</span></li>
+                    <li><img src="{% static 'images\shop.svg' %}" /><span>买过的店</span></li>
+                    <li><img src="{% static 'images\feet.svg' %}" /><span>我的足迹</span></li>
+                </ul>
+                <div></div>
+            </div>
+        </div>
+        <!-- 页面主体 -->
+        <table class="content">
+        </table>
+        <!-- 一些隐藏的盒子 -->
+        <div class="buttom_loading">加载中......</div>
+        <!-- 最右边的导航栏 -->
+        <ul class="sidebar">
+            <li class="subNav1"><a href="/"><img src="{% static 'images/title1.svg' %}" alt="导航栏1" /></a></li>
+            <li class="subNav2"><a href="#"><img src="{% static 'images/title2.svg' %}" alt="导航栏2" /></a></li>
+            <li class="subNav3"><a href="#"><img src="{% static 'images/title3.svg' %}" alt="导航栏3" /></a></li>
+            <li class="subNav4"><a href="/my/"><img src="{% static 'images/title4.svg' %}" alt="导航栏4" /></a></li>
+        </ul>
+        <script>const Image_url = "{% static 'images\\shoppingCart.svg' %}"</script>
+        <script src="{% static 'js/index.js' %}"></script>
+    </div>
+
+</body>
+
+</html>

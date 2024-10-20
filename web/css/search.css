@@ -1,0 +1,397 @@
+/* 通用样式 */
+* {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    list-style: none;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 最大的div样式 */
+.root {
+    margin: 0 auto;
+    width: 1210px;
+    border: 1px solid #ff000000;
+    position: relative;
+}
+
+body {
+    background: #ebf2f5;
+}
+
+/* 搜索栏样式 开始 */
+.header {
+    width: 1200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #cccccc00;
+    box-shadow: 3px 3px 3px #777777,
+        -2px -2px 6px #ffffff;
+
+}
+
+.headerSearch {
+    width: 800px;
+    height: 60px;
+    margin: 60px auto;
+    border-radius: 22px;
+    border: 2px solid #ebf2f5;
+    background: #ebf2f5;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+}
+
+.searchLeft,
+.search,
+.searchRight {
+    height: 100%;
+    float: left;
+}
+
+.searchLeft {
+    width: 76px;
+    border-radius: 19px 0 0 19px;
+    background: #ffffff
+}
+
+.searchLeft img {
+    display: block;
+    width: 50%;
+    margin: 12px auto 0;
+
+}
+
+.search {
+    width: 560px;
+    padding-left: 24px;
+    font-size: 25px;
+    outline: none;
+}
+
+.searchRight {
+    width: 140px;
+    border-radius: 0 19px 19px 0;
+    background: #ebf2f5;
+    text-align: center;
+    font-size: 30px;
+    color: #135161;
+    line-height: 60px;
+}
+
+/* 搜索栏样式 结束 */
+/* 导航栏，焦点图 开始 */
+.nav {
+    margin-top: 20px;
+    width: 1200px;
+    height: 500px;
+    border: 2px solid #cccccc00;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #777777,
+        -2px -2px 6px #ffffff;
+}
+
+.nav .tab {
+    height: 70px;
+    margin: 20px;
+    border-radius: 9px;
+    border: 1px solid #ffffff00;
+    box-shadow: 0px 1px 3px #a1a4a5,
+        -0px -1px 3px #ffffff;
+}
+
+.nav .tab ul {
+    margin-top: 10px;
+}
+
+.nav .tab ul li {
+    display: inline-block;
+    width: 100px;
+    margin: 0 58px 0;
+    line-height: 45px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(230, 61, 61);
+
+}
+
+.nav .tab ul li:hover {
+    transition: all 0.5s;
+    box-shadow: 2px 2px 6px #595b5c,
+        -1px -1px 6px #ffffff;
+}
+
+.nav .nav_class,
+.nav .nav_center,
+.nav .nav_userInfo {
+    float: left;
+    width: 200px;
+    height: 350px;
+    border: 2px solid #d4cece00;
+    background: #f8fdff;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.nav .nav_class {
+    width: 260px;
+}
+
+.nav .nav_class ul span {
+    float: right;
+    line-height: 30px;
+    margin-right: 15px;
+
+}
+
+.nav .nav_class ul span a {
+    margin: 0 10px 0;
+}
+
+.nav .nav_class ul span a:hover {
+    color: red;
+    transition: all 0.2s;
+}
+
+.nav .nav_class ul li {
+    height: 35px;
+    width: 240px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.nav .nav_class ul li:hover {
+    transition: all 0.2s;
+    border-radius: 7px;
+    background: #d8d8d8;
+}
+
+.nav .nav_class ul li img {
+    width: 33px
+}
+
+.nav .nav_center {
+    width: 620px;
+    overflow: hidden;
+}
+
+.nav .nav_center img {
+    width: 100%;
+}
+
+.nav .nav_userInfo {
+    width: 235px;
+    position: relative;
+
+}
+
+.nav .nav_userInfo .userInfo_top {
+    width: 200px;
+    height: 135px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.nav .nav_userInfo .userInfo_top:hover {
+    transition: all 0.5s;
+    box-shadow: 6px 6px 12px #595b5c,
+        -2px -2px 12px #ffffff;
+}
+
+.nav .nav_userInfo .userInfo_top img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+.nav .nav_userInfo .user_a {
+    height: 50px;
+    width: 220px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 6px #595b5c,
+        inset -1px -1px 5px #ffffff;
+    top: 170px;
+    left: 4px;
+}
+
+.nav .nav_userInfo .user_a li {
+    display: inline-block;
+    text-align: center;
+}
+
+.nav .nav_userInfo .user_a li:hover {
+    transition: all 0.5s;
+    color: red;
+}
+
+.nav .nav_userInfo .user_b {
+    position: absolute;
+    top: 250px;
+    height: 70px;
+    left: 3px;
+
+}
+
+.nav .nav_userInfo .user_b li {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nav .nav_userInfo .user_b li:hover {
+    transition: all 0.5s;
+    color: red;
+}
+
+.nav .nav_userInfo .user_b img {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+
+}
+
+/* 导航栏，焦点图 结束 */
+/* 旁边的标签栏样式 开始 */
+.sidebar {
+    width: 90px;
+    height: 370px;
+    opacity: 1;
+    border-radius: 20px;
+    background: #ebf2f5;
+    box-shadow: 7px 9px 4px #d3d4d4;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
+.sidebar li {
+    opacity: 1;
+    border-radius: 15px;
+    background: rgba(224, 242, 196, 0.05);
+    box-shadow: 5px 5px 6px #aeb3b5,
+        -2px -2px 2px #e9f3ff;
+    border: 2px solid rgba(204, 204, 204, 0);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+    transition-duration: 2s;
+}
+
+.sidebar li:hover {
+    transition-property: all;
+    transition-duration: 1s;
+
+    background: none;
+    box-shadow: none;
+
+
+}
+
+.sidebar li img {
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+}
+
+/* 旁边的标题栏 结束 */
+/* 页面主体 开始 */
+.content {
+    width: 1200px;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+
+.content tr {
+    width: 1200px;
+    height: 380px;
+
+}
+
+.content td {
+
+    height: 300px;
+}
+
+.content td div {
+    width: 220px;
+    margin: 0 auto;
+    height: 330px;
+    border-radius: 20px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 29px;
+    background: #e9f3ff;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+}
+
+.content td div:hover {
+    transition: 0.3s all;
+    box-shadow: 6px 6px 5px #323333,
+        -2px -2px 6px #ffffff;
+}
+
+.content td div .img {
+    display: block;
+
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 0;
+    box-shadow: 2px 2px 5px #6d6e6e,
+        -1px -1px 6px #ffffff;
+}
+
+.content td div .produceName {
+    display: block;
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    /* 隐藏超出容器的内容 */
+    margin: 15px auto 0;
+
+}
+
+.content td div .price {
+    display: inline-block;
+    padding: 0 5px 0;
+    font-size: 22px;
+    color: rgb(157, 171, 179);
+    font-weight: 900;
+    margin: 20px 0 0 10px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+}
+
+.content td div .shoppingCart {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    float: right;
+
+}
+
+/* 页面主体 结束 */
+/* 隐藏的盒子 */
+.buttom_loading {
+    width: 100px;
+    margin: 100px auto
+}

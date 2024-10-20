@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-style: none;
+    box-sizing: content-border
+}
+
+body {
+    background: linear-gradient(135deg, rgba(73, 102, 235, 0.55) 0%, rgba(73, 235, 208, 0.22) 36.04%, rgba(121, 72, 234, 0.12) 83.84%, rgba(121, 72, 234, 0) 100%) no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg {
+    margin: 130px auto 0;
+    width: 966px;
+    height: 614px;
+    opacity: 1;
+    border-radius: 63px;
+    border: rgba(204, 204, 204, 0) solid 1px;
+    box-shadow: 6px 10px 35px 5px rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+.input1,
+.input2 {
+    margin: 50px auto 20px;
+    width: 580px;
+    height: 83px;
+    opacity: 1;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0);
+    border: 4px solid rgba(0, 0, 0, 1);
+    display: block;
+    padding-left: 20px;
+}
+
+.input2 {
+    margin: 0 auto;
+}
+
+.btn {
+    width: 427px;
+    height: 104px;
+    opacity: 1;
+    border-radius: 39px;
+    background: rgb(197, 206, 222);
+    box-shadow: 16px 13px 52px rgba(0, 0, 0, 0.25);
+    margin: 20px auto 0;
+    display: block;
+    font-size: 40px;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 10px
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+.tishi {
+    color: red;
+    width: 250px;
+    height: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.bottom {
+    width: 30px;
+    height: 20px;
+    border: 1px solid red;
+}
+
+#id2 {
+    display: none;
+}

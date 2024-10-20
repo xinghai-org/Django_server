@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>商品信息</title>
+    <link rel="stylesheet" href="{% static 'css/produce_info.css' %}" />
+</head>
+
+<body>
+    <div class="root">
+        <!-- 搜索栏，log 开始 -->
+        <div class="header">
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="输入搜索关键词...">
+                <button onclick="searchFunction()">搜索</button>
+                <script>
+                    function searchFunction() {
+                        var input = document.getElementById("search-input");
+                        var searchTerm = input.value;
+                        console.log("搜索词: " + searchTerm);
+                    }
+                </script>
+
+            </div>
+        </div>
+
+        <!-- 搜索栏，log 结束 -->
+        <!-- 商品信息 开始 -->
+        <div class="produce_info">
+            <!-- 展示图片 -->
+            <div id="carousel">
+            </div>
+
+            <!-- 商品信息 -->
+            <div class="div2">
+                <p class="produce_name">{{ goods_name }}</p>
+                <p class="produce_store">{{ store_name }}</p>
+                <p class="produce_price">￥{{ price }}</p>
+
+                <!-- 其他信息 -->
+                <ul class="note">
+                    <li class="shipping _costs"><span></span>新会员专享首单满38元免邮（限唯品自营商品，部分商品不可用）</li>
+                    <li class="time"><span></span>现在下单，预计12月12日24:00前发货</li>
+                </ul>
+
+                <div class="line"></div>
+                <!-- 颜色 -->
+                <div class="produce_color">
+                    <dt>颜色</dt>
+                    <ul>
+   
+                    </ul>
+                </div>
+
+
+                <!-- 大小 -->
+                <div class="produce_size">
+                    <dt>规格</dt>
+                    <ul>
+                    </ul>
+                </div>
+
+
+
+                <div class="line"></div>
+                <!-- 结算 -->
+                <div class="push">
+                    <p class="produce_price">￥{{ price }}</p>
+                    <div class="address">
+                        <span class="grey">配送至：</span>
+                        <select id="province">
+                            <option selected="selected">北京</option>
+                            <option selected="selected">上海</option>
+                            <option selected="selected">天津</option>
+                            <option selected="selected">重庆</option>
+                            <option selected="selected">河北</option>
+                            <option selected="selected">山西</option>
+                            <option selected="selected">河南</option>
+                            <option selected="selected">吉林</option>
+                            <option selected="selected">黑龙江</option>
+                            <option selected="selected">内蒙古</option>
+                            <option selected="selected">山东</option>
+                            <option selected="selected">安徽</option>
+                            <option selected="selected">浙江</option>
+                            <option selected="selected">福建</option>
+                            <option selected="selected">湖北</option>
+                            <option selected="selected">湖南</option>
+                            <option selected="selected">广东</option>
+                            <option selected="selected">广西</option>
+                            <option selected="selected">江西</option>
+                            <option selected="selected">四川</option>
+                            <option selected="selected">海南</option>
+                            <option selected="selected">贵州</option>
+                            <option selected="selected">云南</option>
+                            <option selected="selected">西藏</option>
+                            <option selected="selected">陕西</option>
+                            <option selected="selected">甘肃</option>
+                            <option selected="selected">青海</option>
+                            <option selected="selected">宁夏</option>
+                            <option selected="selected">新疆</option>
+                            <option selected="selected">港澳</option>
+                            <option selected="selected">台湾</option>
+                            <option selected="selected">海外</option>
+                        </select>
+                        <select id="city">
+                            <option selected="selected">清远市</option>
+                        </select>
+                        <select id="district">
+                            <option selected="selected">清城区</option>
+                        </select>
+                    </div>
+
+                    <div class="add_cart">
+                        <div id="plusMinusButton">
+                            <div class="add">+</div>
+                            <div class="value">1</div>
+                            <div class="minus">-</div>
+                        </div>
+                        <div class="cart-button">加入购物车</div>
+                        <div class="star"><img src="{% static 'images/star.svg' %}" /></div>
+                    </div>
+                </div>
+                <br />
+                <!-- 提供服务 -->
+                <div class="server">
+                    <div class="th">服务</div>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="produce_img_list">
+                <div class="th">商品展示</div>
+                <ul class="img_list">
+                </ul>
+            </div>
+        </div>
+        <!-- 商品信息 结束 -->
+
+        <!-- 商品尺码 -->
+        <div class="project_size">
+            <table class="size_table">
+            </table>
+        </div>
+        <!-- 商品属性 -->
+        <div class="atrribute_info">
+            <table class="atrribute_info_list">
+            </table>
+        </div>
+        <!-- 商品展示 -->
+
+        <div class="produce_info_images_list">
+        </div>
+
+        <!-- 最右边的导航栏 -->
+        <ul class="sidebar">
+            <li class="subNav1"><a href="/"><img src="{% static 'images/title1.svg' %}" alt="导航栏1" /></a></li>
+            <li class="subNav2"><a href="#"><img src="{% static 'images/title2.svg' %}" alt="导航栏2" /></a></li>
+            <li class="subNav3"><a href="#"><img src="{% static 'images/title3.svg' %}" alt="导航栏3" /></a></li>
+            <li class="subNav4"><a href="/my/"><img src="{% static 'images/title4.svg' %}" alt="导航栏4" /></a></li>
+        </ul>
+
+    </div>
+    <script>
+        // 渲染信息
+        // 展示图片1
+        const media = {{ introduction_media| safe }}
+        const specifications = {{ specifications| safe }}
+        const service = {{ service| safe }}
+        const parameters = {{ parameters|safe }}
+        const display_image = {{ display_image|safe }}
+        const star_star = "{% static 'images/star_all.svg' %}"
+        const star_img_svg = "{% static 'images/star.svg' %}"
+    </script>
+    <script src="{% static 'js/produce_info.js' %}" ></script>
+</body>
+
+</html>

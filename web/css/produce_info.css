@@ -1,0 +1,674 @@
+body {
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:not(:visited):hover {
+    background-color: black no-repeat;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+/* 头部搜索栏开始 */
+.header {
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-top: 20px;
+    width: 1200px;
+    height: 150px;
+
+}
+
+.logo {
+    border: 1px solid rgba(255, 0, 0, 0);
+    float: left;
+    width: 200px;
+    height: 80%;
+}
+
+.logo .img {
+    display: inline-block;
+    width: 80px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    display: inline;
+}
+
+.logo .img img {
+    width: 80px;
+}
+
+.logo .p2 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+
+.search-container {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.jiantou1 {
+    width: 40px;
+    position: relative;
+    top: 350px;
+    left: 10px;
+}
+
+.jiantou2 {
+    width: 35px;
+    position: relative;
+    top: 350px;
+    left: 470px;
+}
+
+.xie1 {
+    position: relative;
+    top: 380px;
+}
+
+.xie2 {
+    position: relative;
+    top: 380px;
+}
+
+.xie3 {
+    position: relative;
+    top: 380px;
+}
+
+.line {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px dotted #dfdfdf;
+    margin-bottom: 15px;
+}
+
+/* 商品信息开始 */
+.produce_info {
+    width: 1200px;
+    border: 1px solid #ff000000;
+    margin-bottom: 250px;
+}
+
+#carousel {
+    border: solid #CCC 1px;
+    width: 420px;
+    /* 根据需要调整宽度 */
+    height: 420px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 3px 3px 6px #c8ced0,
+        -3px -3px 6px #ffffff;
+    /* 根据需要调整高度 */
+    overflow: hidden;
+}
+
+#carousel img {
+    width: 420px;
+    display: none;
+}
+
+.div2 {
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    margin-left: 173px;
+    vertical-align: top;
+    background: #c4232300;
+    border: 1px solid #ff000000;
+    border-collapse: collapse;
+}
+
+.div2 .produce_name {
+    width: 600px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.div2 .produce_store {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px 2px #c8ced0,
+        -5px -5px 10px #ffffff;
+    margin-top: 10px;
+}
+
+.div2 .produce_price {
+    margin-top: 25px;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(157, 171, 179);
+}
+
+.div2 .note {
+    margin-top: 20px;
+}
+
+.div2 .note li {
+    border: 1px solid #ff000000;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    font: size 12px;
+    color: #807e7e;
+}
+
+.div2 .note li span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-top: 6px;
+    vertical-align: top;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+}
+
+.div2 .produce_color {
+    margin-top: 50px;
+    border: 2px solid rgba(255, 0, 0, 0);
+    width: 560px;
+}
+
+.div2 .produce_color dt,
+.div2 .produce_color ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div2 .produce_color ul {
+    width: 400px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+    padding-bottom: 8px;
+}
+
+.div2 .produce_color dt {
+    font-size: 13px;
+    font-weight: 900;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px #6d7070,
+        -2px -2px 10px #ffffff;
+}
+
+.div2 .produce_color li {
+    margin: 8px 0 0 10px;
+    display: inline-block;
+    line-height: 30px;
+    border: 1px solid #CCC;
+    padding: 3px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+
+.div2 .produce_color .produce_color_img {
+    width: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div2 .produce_color .produce_color_options {
+    display: inline-block;
+
+}
+
+
+.div2 .produce_size {
+    margin-top: 20px;
+    width: 600px;
+}
+
+.div2 .produce_size dt,
+.div2 .produce_size ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div2 .produce_size ul {
+    width: 400px;
+    margin-left: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #4e5152,
+        -1.5px -1.5px 2px #ffffff;
+    padding-bottom: 8px;
+}
+
+.div2 .produce_size dt {
+    font-size: 13px;
+    font-weight: 900;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px #6d7070,
+        -2px -2px 10px #ffffff;
+}
+
+.div2 .produce_size li {
+    border: 1px solid #CCC;
+    margin: 8px 0 0 10px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+
+.div2 .server {
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-top: 20px;
+}
+
+.div2 .server ul {
+    margin-left: 25px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    display: inline-block;
+    width: 500px;
+}
+
+.div2 .server .th {
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: top;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px #6d7070,
+        -2px -2px 10px #ffffff;
+}
+
+.div2 .server li {
+    border: 1px solid rgba(255, 0, 0, 0);
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px #6d7070,
+        -2px -2px 10px #ffffff;
+}
+
+.produce_info .produce_img_list {
+    position: absolute;
+    top: 630px;
+    width: 420px;
+}
+
+.produce_info .produce_img_list .th {
+    font-size: 25px;
+}
+
+.produce_info .produce_img_list .img_list {
+    border: 2px solid rgba(0, 255, 128, 0);
+    height: 420px;
+    width: 433px;
+    overflow: auto;
+}
+
+.produce_info .produce_img_list .img_list li {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(255, 0, 0, 0);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 7px;
+    box-shadow: 5px 5px 6px #3b3c3d,
+        -1px -1px 1px #ffffff;
+}
+
+.produce_info .produce_img_list .img_list img {
+    width: 100%;
+}
+
+/* 商品信息结束 */
+
+/* push1 start */
+.push {
+    margin-top: 50px;
+}
+
+.push .produce_price {
+    font-size: 30px;
+    margin: 0;
+}
+
+.push .address {
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-top: 6px;
+    height: 40px;
+}
+
+.push .address select {
+    background: #ffffff00;
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px #c3c9cb,
+        -5px -5px 10px #ffffff;
+}
+
+.push .add_cart {
+    margin-top: 30px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 380px;
+}
+
+.push .add_cart div {
+    display: inline-block;
+}
+
+.push .add_cart #plusMinusButton {
+    vertical-align: top;
+    border-radius: 7px;
+    width: 150px;
+    height: 40px;
+    box-shadow: 2px 2px 0px #b5babd,
+        -2px -2px 0px #ffffff;
+}
+
+.push .add_cart #plusMinusButton div {
+
+    height: 100%;
+    width: 40px;
+    float: left;
+    margin-left: 7px;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+
+
+}
+
+.push .add_cart #plusMinusButton .value {
+    font-size: 17px;
+    border-radius: 8px;
+    height: 80%;
+    width: 46px;
+    margin-top: 5px;
+    box-shadow: inset 2px 2px 0px #b5babd,
+        inset -2px -2px 0px #ffffff;
+
+}
+
+.push .add_cart .cart-button {
+    margin-left: 30px;
+    padding: 0 13px;
+    line-height: 40px;
+    border-radius: 8px;
+    height: 40px;
+    vertical-align: top;
+    box-shadow: 2px 2px 0px #b5babd,
+        -2px -2px 0px #ffffff;
+}
+
+.push .add_cart .star {
+    margin-left: 42px;
+    width: 40px;
+    padding: 4px;
+    line-height: 40px;
+    border-radius: 8px;
+    height: 40px;
+    box-shadow: 2px 2px 0px #b5babd,
+        -2px -2px 0px #ffffff;
+}
+
+.push .add_cart .star img {
+    width: 30px;
+}
+
+.grey {
+    color: grey;
+}
+
+.grey2 {
+    color: grey;
+    font-size: 10px;
+}
+
+.blue {
+    color: blue;
+    font-size: 10px;
+    ;
+}
+
+.red {
+    color: red;
+    font-size: 20px;
+}
+
+.sumbit {
+    position: relative;
+    left: 30px;
+    color: #FFF;
+    background-color: #ff0000;
+    width: 74px;
+    height: 30px;
+    margin-left: 150px;
+    top: 150px;
+}
+
+
+.biaoge1 {
+    background-color: #ececec;
+}
+
+.biaoge2 {
+    background-color: #a8fcfc00;
+}
+
+.h2 {
+    position: relative;
+    top: 450px;
+}
+
+
+
+
+
+video {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 800px;
+    top: 50px;
+}
+
+.p10 {
+    position: absolute;
+    top: 2550px;
+    left: 200px;
+}
+
+/* 通用样式 */
+* {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    list-style: none;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 最大的div样式 */
+.root {
+    margin: 0 auto;
+    width: 1325px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    position: relative;
+}
+
+body {
+    background: #ebf2f5;
+}
+
+/* 旁边的标签栏样式 开始 */
+.sidebar {
+    width: 90px;
+    height: 370px;
+    opacity: 1;
+    border-radius: 20px;
+    background: #ebf2f5;
+    box-shadow: 7px 9px 4px #d3d4d4;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
+.sidebar li {
+    opacity: 1;
+    border-radius: 10px;
+    background: rgba(224, 242, 196, 0.05);
+    box-shadow: 5px 5px 6px #aeb3b5,
+        -2px -2px 2px #e9f3ff;
+    border: 2px solid rgba(204, 204, 204, 0);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+    transition-duration: 2s;
+}
+
+.sidebar li:hover {
+    transition-property: all;
+    transition-duration: 1s;
+
+    background: none;
+    box-shadow: none;
+
+
+}
+
+.sidebar li img {
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+}
+
+/* 旁边的标题栏 结束 */
+
+/* 商品尺码表 开始 */
+.project_size {
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-top: 50px;
+
+}
+
+.project_size .size_table {
+    border-spacing: 5px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.project_size .size_table .th {
+    background: #CCC;
+    font-weight: 600;
+}
+
+.project_size .size_table td {
+    box-shadow: 2px 2px 2px #76797b,
+        -2px -2px 6px #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+/* 商品尺码表 结束 */
+/* 商品属性表 开始 */
+.atrribute_info {
+    margin-top: 50px;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.atrribute_info .atrribute_info_list {
+    border-spacing: 8px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.atrribute_info .atrribute_info_list td,
+.atrribute_info .atrribute_info_list th {
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #76797b,
+        -2px -2px 6px #ffffff;
+}
+
+.atrribute_info .atrribute_info_list td {
+    width: 300px;
+    padding: 10px;
+}
+
+.atrribute_info .atrribute_info_list th {
+    width: 100px;
+}
+
+/* 商品属性表 结束 */
+/* 商品展示图片 开始 */
+.produce_info_images_list {
+    border: 1px solid rgba(255, 0, 0, 0);
+    margin-top: 150px;
+
+
+}
+
+.produce_info_images_list img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}

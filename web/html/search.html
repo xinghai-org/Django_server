@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>aaa</title>
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+</head>
+
+<body>
+    <div class="root">
+        <!-- 头部，那个搜索栏 -->
+        <div class="header">
+            <div class="headerSearch">
+                <div class="searchLeft"><img src="{% static 'images\search_img_top.svg' %}" /></div>
+                <input type='text' class="search"></buttom>
+                <div class="searchRight">搜索</div>
+            </div>
+        </div>
+        <!-- 页面主体 -->
+        <table class="content">
+        </table>
+        <!-- 一些隐藏的盒子 -->
+        <div class="buttom_loading">加载中......</div>
+        <script>const Image_url = "{% static 'images\\shoppingCart.svg' %}"</script>
+        <script src="{% static 'js/search.js' %}"></script>
+    </div>
+
+</body>
+
+</html>

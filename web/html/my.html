@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物平台</title>
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+</head>
+
+<body>
+    <div class="root">
+        <div id="header">
+            <div id="avatar"><img src="{% static 'images\touxiang.svg' %}" alt="头像"></div>
+            <div id="username">{{ 用户 }}</div>
+            <ul class="my_info">
+                <li>
+                    <p>{{ 订单总数 }}</p>
+                    <div>我的订单</div>
+                </li>
+                <li>
+                    <p>{{ 购物车总数 }}</p>
+                    <div>购物车</div>
+                </li>
+                <li>
+                    <p>{{ 收藏总数 }}</p>
+                    <div>我的收藏</div>
+                </li>
+                <li>
+                    <p>{{ 足迹总数 }}</p>
+                    <div>我的足迹</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 我的收藏 -->
+        <div class="header star">
+            <div class="star_top"><img src="{% static 'images/star.svg' %}"><span>收藏</span>
+                <div class="alert">还没有数据呢</div>
+            </div>
+            <ul class="star_list star_l" id="start_list">
+            </ul>
+        </div>
+        <!-- 我的订单 -->
+        <div class="header star">
+            <div class="star_top"><img src="{% static 'images/order.svg' %}"><span>我的订单</span>
+                <div class="alert">还没有数据呢</div>
+            </div>
+            <ul class="star_list">
+
+
+
+            </ul>
+        </div>
+
+        <!-- 我的足迹 -->
+        <div class="header star">
+            <div class="star_top"><img src="{% static 'images\feet.svg' %}"><span>我的足迹</span>
+                <div class="alert">还没有数据呢</div>
+            </div>
+            <ul class="star_list history_list">
+            </ul>
+        </div>
+
+        <!-- 最右边的导航栏 -->
+        <ul class="sidebar">
+            <li class="subNav1"><a href="#"><img src="{% static 'images/title1.svg' %}" alt="导航栏1" /></a></li>
+            <li class="subNav2"><a href="/"><img src="{% static 'images/title2.svg' %}" alt="导航栏2" /></a></li>
+            <li class="subNav3"><a href="#"><img src="{% static 'images/title3.svg' %}" alt="导航栏3" /></a></li>
+            <li class="subNav4"><a href="http://localhost:8000/my/"><img src="{% static 'images/title4.svg' %}"
+                        alt="导航栏4" /></a></li>
+        </ul>
+    </div>
+    <script>
+        const star = {{ 收藏 | safe }}
+        const history = {{ 足迹 | safe }}
+    </script>
+    <script src="{% static 'js/my.js' %}" ></script>
+</body>
+
+</html>
