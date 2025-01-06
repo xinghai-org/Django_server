@@ -1,1 +1,1 @@
-python manage.py runserver [::]:2052
+python manage.py runserver [::]:10002
